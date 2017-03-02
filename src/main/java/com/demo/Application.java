@@ -21,10 +21,13 @@ import org.springframework.context.annotation.ComponentScan;
 public class Application {
 
     //Option 2 - Manually bring the existing instance into the application context
-    @Bean
-    public HazelcastInstance getInstance() {
-        return Hazelcast.getHazelcastInstanceByName("test");
-    }
+//    @Bean
+//    public HazelcastInstance getInstance() {
+//        return Hazelcast.getHazelcastInstanceByName("test");
+//    }
+
+
+    //Options 3 - setting `spring.hazelcast.config` property in application.properties
 
     public static void main(String[] args) {
 
